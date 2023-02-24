@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc251;
+}
+.main-container .timer-container {
+  max-width: 600px;
+  width: 80%;
+  height: 400px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #6192af;
+  border-radius: 50px;
+  background-color: #98bced;
+}
+.main-container .timer-container .time-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .timer-container .time-container .time {
+  width: 30px;
+  height: 60px;
+  font-size: 60px;
+  text-align: center;
+}
+.main-container .timer-container .time-container .time#colon {
+  width: 20px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  .main-container .timer-container .time-container {
+    height: 25%;
+  }
+}
+.main-container .timer-container .buttons-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .timer-container .buttons-container .timer-button {
+  padding: 10px 0;
+  width: 140px;
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.main-container .timer-container .buttons-container .timer-button#startButton {
+  background-color: #53e353;
+  border-color: #25af04;
+}
+.main-container .timer-container .buttons-container .timer-button#startButton:active {
+  background-color: #25af04;
+}
+.main-container .timer-container .buttons-container .timer-button#startButton.inactive {
+  background-color: #bbbbbb;
+  border-color: #777777;
+}
+.main-container .timer-container .buttons-container .timer-button#startButton.inactive:active {
+  background-color: #bbbbbb;
+}
+.main-container .timer-container .buttons-container .timer-button#stopButton {
+  background-color: #fb7676;
+  border-color: #ff0000;
+}
+.main-container .timer-container .buttons-container .timer-button#stopButton:active {
+  background-color: #ff0000;
+}
+.main-container .timer-container .buttons-container .timer-button#stopButton.inactive {
+  background-color: #bbbbbb;
+  border-color: #777777;
+}
+.main-container .timer-container .buttons-container .timer-button#stopButton.inactive:active {
+  background-color: #bbbbbb;
+}
+.main-container .timer-container .buttons-container .timer-button#resetButton {
+  background-color: #ffc251;
+  border-color: #ffa500;
+}
+.main-container .timer-container .buttons-container .timer-button#resetButton:active {
+  background-color: #ffa500;
+}
+.main-container .timer-container .buttons-container .timer-button#resetButton.inactive {
+  background-color: #bbbbbb;
+  border-color: #777777;
+}
+.main-container .timer-container .buttons-container .timer-button#resetButton.inactive:active {
+  background-color: #bbbbbb;
+}
+@media screen and (max-width: 500px) {
+  .main-container .timer-container .buttons-container .timer-button {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-container .timer-container .buttons-container {
+    height: 75%;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
