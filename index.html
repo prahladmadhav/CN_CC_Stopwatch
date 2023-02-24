@@ -9,14 +9,19 @@
     <script src="src/scripts.js"></script>
 </head>
 <body>
+    <!-- The Main Container -->
     <div class="main-container">
+        <!-- The Timer Container -->
         <div class="timer-container">
+            <!-- The Container with the digits section -->
             <div class="time-container">
-                <div id="hourTens" class="time">0</div>
-                <div id="hourOnes" class="time">0</div>
-                <div id="colon" class="time">:</div>
+                <!-- Minutes Part -->
                 <div id="minuteTens" class="time">0</div>
                 <div id="minuteOnes" class="time">0</div>
+                <div id="colon" class="time">:</div>
+                <!-- Seconds Part -->
+                <div id="secondTens" class="time">0</div>
+                <div id="secondOnes" class="time">0</div>
             </div>
             <div class="buttons-container">
                 <a id="startButton" class="timer-button" onclick="startFunc()">Start</a>
