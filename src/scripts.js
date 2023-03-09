@@ -5,14 +5,14 @@ var secondTensVar = 0;
 var secondOnesVar = 0;
 // Interval ID Variable
 var intervalId;
-// Variable storing true if the timer has started, false if it has not
+// Variable storing true if the stopwatch has started, false if it has not
 var isStarted = false;
 /* 
-    Function allows us to update the status of the timer variables
+    Function allows us to update the status of the stopwatch variables
     and update the time on the HTML Element(s) corresponding to which
     the change must occur.
 */
-var timerFunc = () => {
+var stopwatchFunc = () => {
   secondOnesVar++;
   if (secondOnesVar == 10) {
     secondOnesVar = 0;
@@ -38,7 +38,7 @@ var timerFunc = () => {
 // On the click of Start button
 var startFunc = () => {
   if (!isStarted) {
-    intervalId = setInterval(timerFunc, 1000);
+    intervalId = setInterval(stopwatchFunc, 1000);
     document.getElementById("startButton").classList.add("inactive");
     document.getElementById("stopButton").classList.remove("inactive");
     document.getElementById("resetButton").classList.remove("inactive");

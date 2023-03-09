@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #ffc251;
-    .timer-container{
+    .stopwatch-container{
         max-width: 600px;
         width: 80%;
         height: 400px;
@@ -43,7 +43,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            .timer-button{
+            .stopwatch-button{
                 padding: 10px 0;
                 width: 140px;
                 margin: 20px;
